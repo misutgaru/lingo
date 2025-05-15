@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:studio": "npx drizzle-kit studio",
-    "db:push": "npx drizzle-kit push"
+    "db:studio": "bunx drizzle-kit studio",
+    "db:push": "bunx drizzle-kit push",
+    "db:seed": "bun ./scripts/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.19.2",
@@ -21,8 +22,10 @@
     "drizzle-orm": "^0.43.1",
     "lucide-react": "^0.510.0",
     "next": "14.2.28",
+    "next-themes": "^0.4.6",
     "react": "^18",
     "react-dom": "^18",
+    "sonner": "^2.0.3",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -40,6 +43,7 @@
     "postcss": "^8",
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.4",
     "typescript": "^5"
   }
 }
